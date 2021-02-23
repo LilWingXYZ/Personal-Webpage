@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>
+
+    <!-- 基本页面需要
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>联系方式</title>
+	<meta name="description" content="">
+	<meta name="author" content="徐云哲">
+	
+    <!-- 手机转移专用
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+  ================================================== -->
+  	<link rel="stylesheet" href="css/zerogrid.css">        <!--响应式布局设计-->
+	<link rel="stylesheet" href="css/style.css">
+	
+	<script src="js/jquery-latest.min.js"></script>
+	<script src="js/script.js"></script>
+	
+</head>
+
+<body>
+<div class="wrap-body">
+
+<!--////////////////////////////////////Header-->
+<header>
+	<div class="wrap-header zerogrid">
+		<div class="row">
+			<div id="cssmenu">
+				<ul>
+				   <li class='active'><a href="个人网站.html">主页</a></li>
+				   <li><a href="#">我的珍藏</a>
+					  <ul>
+						 <li><a href='图片.html'>图片</a>
+							<ul>
+							   <li><a href='#'>个人照片</a></li>
+							   <li><a href='#'>他人照片</a></li>
+							   <li><a href='#'>网络图片</a></li>
+							</ul>
+						 </li>
+						 <li><a href='视频.html'>视频</a>
+							<ul>
+							   <li><a href='#'>个人视频</a></li>
+							   <li><a href='#'>他人视频</a></li>
+							   <li><a href='#'>网络视频</a></li>
+							</ul>
+						 </li>
+					  </ul>
+				   </li>
+				   <li><a href="个人简历.html">我的简历</a></li>
+				   <li><a href="联系方式.html">联系方式</a></li>
+				</ul>
+			</div>
+			<a href='个人网站.html' class="logo"><img src="images/logo.png" /></a>
+		</div>
+	</div>
+</header>
+
+
+<!--////////////////////////////////////Container-->
+<section id="container">
+	<div class="zerogrid">
+		<div class="wrap-container clearfix">
+			<div id="main-content">
+				<div class="row wrap-content"><!--启动盒-->
+					<div class="header">
+						<div class="header">
+						<h1>欢迎来到我的联系方式</h1>
+						<span>这里有我最最最具体的各种联系形式 </br>它们不仅能查到我现在的位置</br>也可以轻松地向我发信息</span>
+					</div>	
+					<div class="row">
+						<div class='embed-container maps'>
+							<iframe src="http://j.map.baidu.com/jWsLL" width="100%" height="450px" frameborder="0" style="border: 0"></iframe>
+						</div>
+						<div class="col-1-3">
+							<div class="wrap-col">
+								<h2>联系方式</h2>
+								<span>如果你有什么好的问题或建议可以直接在右侧的书写框中向我反馈，如果我收到消息会及时给你反馈，谢谢你的留言！</span>
+								<p>如果你想直接与我见面，可以先给我留言预约，或者是直接按照上方的地图示意来找我即可，欢迎你的来临！</p>
+								<p>欢迎你分享各种资源<br>
+									期待你的来稿</p>
+								   <p>电话：17806259296 <br>
+									邮箱：952945388@qq.com</p>
+								<p>地址：中国海洋大学崂山校区北区2号楼</p>
+							</div>
+						</div>
+						<div class="col-2-3">
+							<div class="wrap-col">
+								<div class="contact">
+									<h2>欢迎留言</h2>
+									<div id="contact_form">
+										<form name="form1" id="ff" method="post" action="contact.php">
+											<label class="row">
+												<div class="col-1-2">
+													<div class="wrap-col">
+														<input type="text" name="name" id="name" placeholder="输入姓名" required="required" />
+													</div>
+												</div>
+												<div class="col-1-2">
+													<div class="wrap-col">
+														<input type="email" name="email" id="email" placeholder="输入邮箱" required="required" />
+													</div>
+												</div>
+											</label>
+											<label class="row">
+												<div class="wrap-col">
+													<input type="text" name="subject" id="subject" placeholder="主题" required="required" />
+												</div>
+											</label>
+											<label class="row">
+												<div class="wrap-col">
+													<textarea name="message" id="message" class="form-control" rows="4" cols="25" required="required"
+													placeholder="信息内容"></textarea>
+												</div>
+											</label>
+											<center><input class="sendButton" type="submit" name="Submit" value="留言"></center>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--////////////////////////////////////Footer-->
+<footer>
+	<div class="zerogrid">
+		<div class="wrap-footer">
+			<div class="row">
+				<h3>联系方式</h3>
+				<span>电话 / 17806259296 </span></br>
+				<span>邮箱 / 952945388@qq.com  </span></br>
+				<span>地址 / 中国海洋大学崂山校区北区2号楼 </span></br>
+				<span><strong>如果有任何好的问题或建议都可以及时联系我</strong></span>
+			</div>
+		</div>
+	</div>
+</footer>
+
+	<!-- 百度地图 -->
+	<script>
+		$('.maps').click(function () {
+		$('.maps iframe').css("pointer-events", "auto");
+	});
+
+	$( ".maps" ).mouseleave(function() {
+	  $('.maps iframe').css("pointer-events", "none"); 
+	});
+	</script>
+
+</div>
+</body></html>
